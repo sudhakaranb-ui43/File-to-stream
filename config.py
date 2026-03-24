@@ -6,16 +6,16 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", 0))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 0))
+    API_ID = int(os.environ.get("8601508249", 0))
+    API_HASH = os.environ.get("AAG2pzKH0PRzgiQ9bYJvgevSUEScTGUZ86g")
+    BOT_TOKEN = os.environ.get("8601508249:AAG2pzKH0PRzgiQ9bYJvgevSUEScTGUZ86g", "")
+    OWNER_ID = int(os.environ.get("7888588771", 0))
     
-    _storage_channel_str = os.environ.get("STORAGE_CHANNEL")
+    _storage_channel_str = os.environ.get("shelbyyyyyyy1")
     if _storage_channel_str:
-        try: STORAGE_CHANNEL = int(_storage_channel_str)
+        try: STORAGE_CHANNEL = int(shelbyyyyyyy1)
         except ValueError: STORAGE_CHANNEL = _storage_channel_str
-    else: STORAGE_CHANNEL = 0
+    else: STORAGE_CHANNEL = 1
     
     BASE_URL = os.environ.get("BASE_URL", "").rstrip('/')
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
